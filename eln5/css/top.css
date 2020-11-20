@@ -1,0 +1,69 @@
+body{
+  background-image: url("../img/top.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color:black;
+}
+.wrapper{
+  position:relative;
+  top:50%;
+}
+/* Animation-1 */
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75); 
+  background-color: rgb(25,25,25);  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 18em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    color:white;
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation-2 */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+ blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 18em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/*Animation _ fadeIn*/
+.fade{
+animation: fadeIn 10s ;
+animation-delay: 3s ;
+animation-fill-mode:forwards;
+color:white;
+font-family:'serif';
+display:block;
+}
+
+.fade{
+  padding:0 48%;
+  display:block;
+}
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+}
